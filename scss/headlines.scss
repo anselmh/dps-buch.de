@@ -1,0 +1,50 @@
+.wrapper-header {
+	text-align: center;
+	width: auto;
+}
+
+.wrapper-headlines {
+	@include border-box-sizing;
+	margin: 4em auto;
+	padding: 2em 0;
+	border-top: 1px solid $red;
+	border-bottom: 1px solid $red;
+	
+	@include at-breakpoint($tablet) {
+		max-width: 30em;
+	}
+
+	@include at-breakpoint($desktop) {
+		max-width: 50em;
+	}
+}
+
+h1,
+h2, 
+h3 {
+	color: $red;
+}
+
+h1, 
+h2 {
+	font-family: "source-sans-pro";
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: "pt-serif";
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: 700;
+}

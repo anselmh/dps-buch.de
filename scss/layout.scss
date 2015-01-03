@@ -1,0 +1,94 @@
+// In the layout file is the grid defined
+// If you need special grid selectors please write them in this file (e.g. span1)
+
+
+
+
+// Importing susy grid
+
+@import "susy";
+
+
+
+
+// Susy grid setup for small devices
+
+$total-columns		: 1;			// number of columns
+$column-width		: 27em;		
+$gutter-width   	: 1em;
+$side-gutter-width	: 1em; 		// Describes the left and right mostgutter of the grid background
+$grid-padding   	: $gutter-width;
+
+
+
+
+
+// Setup of breakpoints
+// Make new variables for new breakpoints
+// Syntax: $media-layout: <min-width> <layout> <max-width> <ie-fallback>;
+// You must supply either <min-width> or <layout>.
+// $media-layout: 12;			// Use 12-col layout at matching min-width.
+// $media-layout: 30em;			// At min 30em, use closest fitting layout.
+// $media-layout: 30em 12;		// At min 30em, use 12-col layout.
+// $media-layout: 12 60em;		// Use 12 cols up to max 60em.
+// $media-layout: 30em 60em;	// Between min 30em & max 60em, use closest layout.
+// $media-layout: 30em 12 60em;	// Use 12 cols between 2in 30em & max 60em.
+// $media-layout: 60em 12 30em;	// Same. Larger length will always be max-width.
+// $media-layout: 12 lt-ie9;	// Output is included under `.lt-ie9` class,
+								// for use with IE conditional comments
+								// on the <html> tag.
+
+$tablet			: 34.375em 2; // 550px/16px
+$desktop		: 58.75em 3; // 940px/16px
+// $desktop-big	: 72.2222em 4; // 1300px/18px
+
+
+
+
+
+// Standard page selector
+
+.grid-container {
+//	@include susy-grid-background; // Debugging the grid
+	@include container($total-columns, $tablet, $desktop); // Shortcut so include container is in every breakpoint
+
+	@include at-breakpoint($tablet) {
+//		@include susy-grid-background;
+	}
+
+	@include at-breakpoint($desktop) {
+//		@include susy-grid-background;
+	}
+}
+
+@-webkit-keyframes fade-in-first {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in-second {
+	0% { opacity: 0; }
+	50% { opactity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in-third {
+	0% { opacity: 0; }
+	75% { opactity: 0; }
+	100% { opacity: 1; }
+}
+
+.animate-1 {
+	-webkit-animation-name: fade-in-first;
+	-webkit-animation-duration: 4s;
+}
+
+.animate-2 {
+	-webkit-animation-name: fade-in-second;
+	-webkit-animation-duration: 4s;
+}
+
+.animate-3 {
+	-webkit-animation-name: fade-in-third;
+	-webkit-animation-duration: 4s;
+}

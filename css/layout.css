@@ -1,0 +1,72 @@
+/* line 51, ../scss/layout.scss */
+.grid-container {
+  *zoom: 1;
+  max-width: 27em;
+  _width: 27em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 34.375em) {
+    /* line 51, ../scss/layout.scss */
+    .grid-container {
+      max-width: 55em; } }
+  @media (min-width: 58.75em) {
+    /* line 51, ../scss/layout.scss */
+    .grid-container {
+      max-width: 83em; } }
+
+@-webkit-keyframes fade-in-first {
+  /* line 65, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 66, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-in-second {
+  /* line 70, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 71, ../scss/layout.scss */
+  50% {
+    opactity: 0; }
+
+  /* line 72, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-in-third {
+  /* line 76, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 77, ../scss/layout.scss */
+  75% {
+    opactity: 0; }
+
+  /* line 78, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 81, ../scss/layout.scss */
+.animate-1 {
+  -webkit-animation-name: fade-in-first;
+  -webkit-animation-duration: 4s; }
+
+/* line 86, ../scss/layout.scss */
+.animate-2 {
+  -webkit-animation-name: fade-in-second;
+  -webkit-animation-duration: 4s; }
+
+/* line 91, ../scss/layout.scss */
+.animate-3 {
+  -webkit-animation-name: fade-in-third;
+  -webkit-animation-duration: 4s; }

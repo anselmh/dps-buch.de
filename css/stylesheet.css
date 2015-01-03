@@ -1,0 +1,328 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|zocial);
+/* line 17, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 46, ../scss/base.scss */
+[class*="zocial-"]:before {
+  font-family: "zocial", sans-serif; }
+
+/* line 51, ../scss/base.scss */
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif; }
+
+/*@include font-face("blokk", 
+	font-files(
+		"blokk/BLOKKNeue-Regular.woff", woff,
+		"blokk/BLOKKNeue-Regular.ttf", ttf,
+		"blokk/BLOKKNeue-Regular.svg", svg,
+		"blokk/BLOKKNeue-Regular.eot")
+	);*/
+/* line 69, ../scss/base.scss */
+body {
+  color: white;
+  font-size: 16px;
+  line-height: 24px; }
+  /* line 61, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  body * html {
+    font-size: 100%; }
+  /* line 64, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  body html {
+    font-size: 16px;
+    line-height: 1.5em; }
+
+/* line 78, ../scss/base.scss */
+a {
+  color: white;
+  text-decoration: none; }
+
+/* line 51, ../scss/layout.scss */
+.grid-container {
+  *zoom: 1;
+  max-width: 27em;
+  _width: 27em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, ../../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 34.375em) {
+    /* line 51, ../scss/layout.scss */
+    .grid-container {
+      max-width: 55em; } }
+  @media (min-width: 58.75em) {
+    /* line 51, ../scss/layout.scss */
+    .grid-container {
+      max-width: 83em; } }
+
+@-webkit-keyframes fade-in-first {
+  /* line 65, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 66, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-in-second {
+  /* line 70, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 71, ../scss/layout.scss */
+  50% {
+    opactity: 0; }
+
+  /* line 72, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-in-third {
+  /* line 76, ../scss/layout.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 77, ../scss/layout.scss */
+  75% {
+    opactity: 0; }
+
+  /* line 78, ../scss/layout.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 81, ../scss/layout.scss */
+.animate-1 {
+  -webkit-animation-name: fade-in-first;
+  -webkit-animation-duration: 4s; }
+
+/* line 86, ../scss/layout.scss */
+.animate-2 {
+  -webkit-animation-name: fade-in-second;
+  -webkit-animation-duration: 4s; }
+
+/* line 91, ../scss/layout.scss */
+.animate-3 {
+  -webkit-animation-name: fade-in-third;
+  -webkit-animation-duration: 4s; }
+
+/* line 1, ../scss/typography.scss */
+p {
+  font-family: "pt-serif";
+  font-style: italic;
+  font-weight: 700;
+  text-align: center; }
+
+/* line 8, ../scss/typography.scss */
+.box-title {
+  padding-top: 3em;
+  font-family: "source-sans-pro";
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 900; }
+
+/* line 1, ../scss/headlines.scss */
+.wrapper-header {
+  text-align: center;
+  width: auto; }
+
+/* line 6, ../scss/headlines.scss */
+.wrapper-headlines {
+  margin: 4em auto;
+  padding: 2em 0;
+  border-top: 1px solid #c21718;
+  border-bottom: 1px solid #c21718; }
+  /* line 14, ../scss/susy/_grid.scss */
+  .wrapper-headlines * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  @media (min-width: 34.375em) {
+    /* line 6, ../scss/headlines.scss */
+    .wrapper-headlines {
+      max-width: 30em; } }
+  @media (min-width: 58.75em) {
+    /* line 6, ../scss/headlines.scss */
+    .wrapper-headlines {
+      max-width: 50em; } }
+
+/* line 24, ../scss/headlines.scss */
+h1,
+h2,
+h3 {
+  color: #c21718; }
+
+/* line 29, ../scss/headlines.scss */
+h1,
+h2 {
+  font-family: "source-sans-pro";
+  line-height: 1em; }
+
+/* line 34, ../scss/headlines.scss */
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/* line 40, ../scss/headlines.scss */
+h2 {
+  font-weight: 400;
+  font-size: 1.5em; }
+
+/* line 45, ../scss/headlines.scss */
+h3 {
+  font-family: "pt-serif";
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 700; }
+
+/* line 1, ../scss/boxes.scss */
+.box {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  width: 100%;
+  height: 15.625em; }
+  @media (min-width: 34.375em) {
+    /* line 1, ../scss/boxes.scss */
+    .box {
+      width: 49.09091%; } }
+  @media (min-width: 58.75em) {
+    /* line 1, ../scss/boxes.scss */
+    .box {
+      width: 32.53012%; } }
+
+/* line 16, ../scss/boxes.scss */
+.box-book {
+  background: transparent url(../img/book.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 22, ../scss/boxes.scss */
+.box-code {
+  background: transparent url(../img/code.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 28, ../scss/boxes.scss */
+.box-fonts {
+  background: transparent url(../img/font.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 34, ../scss/boxes.scss */
+.box-richard {
+  background: transparent url(../img/richard.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 40, ../scss/boxes.scss */
+.box-michi {
+  background: transparent url(../img/michi.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 46, ../scss/boxes.scss */
+.box-anselm {
+  background: transparent url(../img/anselm.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 54, ../scss/boxes.scss */
+.box-authors a:hover {
+  text-decoration: underline; }
+
+/* line 60, ../scss/boxes.scss */
+.box-links {
+  cursor: pointer; }
+  /* line 63, ../scss/boxes.scss */
+  .box-links:hover p {
+    text-decoration: underline; }
+  /* line 67, ../scss/boxes.scss */
+  .box-links:hover .box-title {
+    text-decoration: none; }
+
+/* line 1, ../scss/footer.scss */
+.wrapper-footer {
+  text-align: center;
+  width: auto; }
+
+/* line 6, ../scss/footer.scss */
+.wrapper-footer-text {
+  margin: 4em auto 0 auto;
+  padding: 2em 0;
+  border-top: 1px solid #c21718; }
+  /* line 14, ../scss/susy/_grid.scss */
+  .wrapper-footer-text * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  @media (min-width: 34.375em) {
+    /* line 6, ../scss/footer.scss */
+    .wrapper-footer-text {
+      max-width: 30em; } }
+  @media (min-width: 58.75em) {
+    /* line 6, ../scss/footer.scss */
+    .wrapper-footer-text {
+      max-width: 50em; } }
+  /* line 20, ../scss/footer.scss */
+  .wrapper-footer-text p {
+    color: #c21718;
+    font-family: "source-sans-pro";
+    font-size: 0.75em;
+    font-weight: 400;
+    font-style: normal; }

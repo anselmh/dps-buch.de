@@ -1,0 +1,18 @@
+// Welcome!
+// This is the main file which has to import every needed scss file for your project
+// Change the several scss files to wireframe your project
+// Write every module in a new scss file named after its module without "_"
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+
+// Import base scss files
+
+@import "susy";
+@import "base";
+@import "layout";
+@import "typography";
+@import "headlines";
+@import "boxes";
+@import "footer";

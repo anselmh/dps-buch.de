@@ -1,0 +1,71 @@
+.box {
+	display: inline-block;
+	margin-bottom: 0.25em;
+	width: columns(1,$total-columns);
+	height: 15.625em;
+
+	@include at-breakpoint($tablet) {
+		width: columns(1,$total-columns);
+	}
+
+	@include at-breakpoint($desktop) {
+		width: columns(1,$total-columns);
+	}
+}
+
+.box-book {
+	background: transparent url(../img/book.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-code {
+	background: transparent url(../img/code.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-fonts {
+	background: transparent url(../img/font.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-richard {
+	background: transparent url(../img/richard.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-michi {
+	background: transparent url(../img/michi.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-anselm {
+	background: transparent url(../img/anselm.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.box-authors {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.box-links {
+	cursor: pointer;
+	&:hover {
+		p {
+			text-decoration: underline;
+		}
+
+		.box-title {
+			text-decoration: none;
+		}
+	}
+}

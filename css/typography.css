@@ -1,0 +1,14 @@
+/* line 1, ../scss/typography.scss */
+p {
+  font-family: "pt-serif";
+  font-style: italic;
+  font-weight: 700;
+  text-align: center; }
+
+/* line 8, ../scss/typography.scss */
+.box-title {
+  padding-top: 3em;
+  font-family: "source-sans-pro";
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 900; }

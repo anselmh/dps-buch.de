@@ -1,0 +1,27 @@
+.wrapper-footer {
+	text-align: center;
+	width: auto;
+}
+
+.wrapper-footer-text {
+	@include border-box-sizing;
+	margin: 4em auto 0 auto;
+	padding: 2em 0;
+	border-top: 1px solid $red;
+	
+	@include at-breakpoint($tablet) {
+		max-width: 30em;
+	}
+
+	@include at-breakpoint($desktop) {
+		max-width: 50em;
+	}
+
+	p {
+		color: $red;
+		font-family: "source-sans-pro";
+		font-size: 0.75em;
+		font-weight: 400;
+		font-style: normal;
+	}
+}

@@ -1,0 +1,81 @@
+// In the base file the basic selectors and every variable is defined
+// Please include reset, new colors, fonts or other assets here
+
+
+
+
+// Applying the resets
+// The Basic reset is included with the import in _stylesheet.scss
+
+
+
+
+// Configure color variables
+
+$wireframe-black:				#000;
+$wireframe-grey-dark:			#222;
+$wireframe-grey: 				#666;
+$wireframe-grey-light:			#999;
+$wireframe-white-dark:			#AAA;
+$wireframe-white:				#FFF;
+$wireframe-white-light:			#FFF;
+
+$wireframe-shine-black: 		rgba(0,0,0,0.8);
+$wireframe-shine-grey-dark:		rgba(0,0,0,0.5);
+$wireframe-shine-grey: 			rgba(0,0,0,0.2);
+$wireframe-shine-grey-light:	rgba(255,255,255,0.2);
+$wireframe-shine-white:			rgba(255,255,255,0.7);
+
+$red:							#c21718;
+
+
+
+
+// Configure typography variables
+
+$base-font-size:				16px;
+$base-line-height:				24px;
+
+
+
+
+// Import and setup icon fonts
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|zocial); // Import social icon font
+
+// zocial
+[class*="zocial-"]:before {
+  font-family: 					'zocial', sans-serif;
+}
+
+// fontawesome
+[class*="fontawesome-"]:before {
+  font-family: 					'FontAwesome', sans-serif;
+}
+
+
+
+
+// Import basic fonts
+
+// Blokk is a wireframing font
+/*@include font-face("blokk", 
+	font-files(
+		"blokk/BLOKKNeue-Regular.woff", woff,
+		"blokk/BLOKKNeue-Regular.ttf", ttf,
+		"blokk/BLOKKNeue-Regular.svg", svg,
+		"blokk/BLOKKNeue-Regular.eot")
+	);*/
+
+body {
+	@include establish-baseline;
+
+	color: $wireframe-white
+;	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+
+a {
+	color: $wireframe-white;
+	text-decoration: none;
+}
